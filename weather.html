@@ -5,38 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href ="style.css">
-    <script src="/script.js"></script>
+  
     <title>Weather Forecast Maria Johansson </title>
 </head>
 
 <body>
 
-    <nav> 
-        <ul>
-            <li> London </li>
-            
-            <li> Stockholm </li>
-            
-            <li> Berlin </li>
-
-            <li> Tokyo </li>
-        </ul>
-    </nav>
-
-
     <header> Welcome to the weather forecast </header>
     <h1> Please choose your city</h1>
+    <!-- gör så att när man väljer en stad i navigeringen så kallas funktionen getWeather, och visar data för den staden -->
+    <div id ="board">
+        <div id ="box1"> 
+        <ul>
+            <h3 onclick="getWeather('London')">London</h3> </div>
+    <div id ="box2">        
+            <h3 onclick="getWeather('Stockholm')">Stockholm</h3></div>
+    <div id ="box3">        
+            <h3 onclick="getWeather('Berlin')">Berlin</h3></div>
+    <div id ="box4">   
+            <h3 onclick="getWeather('Tokyo')">Tokyo</h3></div>
+        </ul>
+    </div>
+
 
     <div id = "container" >
         <h1 id = "weather"></h1>
         
-            <p>Temperature: <span id="temp"></span></p>
-            <p>Air Pressure: <span id="air-press"></span></p>
-            <p>Humidity: <span id="humid"></span></p>
-            <p>Wind: <span id="wind"></span></p>
-            <p>Date and Time: <span id="date-time"></span></p> 
+            <p>Temperatur: <span id="temp"></span></p>
+            <p>Air Pressure: <span id="airpress"></span></p>
+            <p>Luft fuktighet: <span id="humid"></span></p>
+            <p>Vind: <span id="wind"></span></p>
+            <p>Datum and Tid: <span id="dateTime"></span></p> 
 
     </div>
-    
+    <script src="/script.js"></script>
 </body>
 </html>
