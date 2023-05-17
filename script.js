@@ -28,11 +28,11 @@ function getWeather(cityName) {
         .then(data => { // data respons
 // uppdatering av väder:
             weather.textContent = data.weather[0].main; // sätter texten av väder elementet och refererar till id i html
-            temp.textContent = `Temperature: ${Math.round(data.main.temp - 273.15)}°C`// data från temp till celcius
-            airpress.textContent = `AirPressure: ${data.main.pressure} hPa`;
+            temp.textContent = `${Math.round(data.main.temp - 273.15)}°C`// data från temp till celcius
+            airpress.textContent = `${data.main.pressure} hPa`;
             humid.textContent = `${data.main.humidity}% `;
             wind.textContent = `${data.wind.speed} m / s`;
-            dateTime.textContent = `Date and ${new Date().toLocaleString()} `;
+            dateTime.textContent = `${new Date().toLocaleString()} `;
         })
         .catch(error => {
             console.log('An error occurred while fetching the weather:', error);

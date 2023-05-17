@@ -11,12 +11,13 @@
 
 <body>
 
-    <header> Welcome to the weather forecast </header>
-    <h1> Please choose your city</h1>
+    <header> <h1> Väderkollen</h1>
+    </header>
+    <h2> Välj en stad</h2>
     <!-- gör så att när man väljer en stad i navigeringen så kallas funktionen getWeather, och visar data för den staden -->
     <div id ="board">
         <div id ="box1"> 
-        <ul>
+        
             <h3 onclick="getWeather('London')">London</h3> </div>
     <div id ="box2">        
             <h3 onclick="getWeather('Stockholm')">Stockholm</h3></div>
@@ -24,15 +25,15 @@
             <h3 onclick="getWeather('Berlin')">Berlin</h3></div>
     <div id ="box4">   
             <h3 onclick="getWeather('Tokyo')">Tokyo</h3></div>
-        </ul>
+    
     </div>
 
 
-    <div id = "container" >
-        <h1 id = "weather"></h1>
+    <div id ="container" >
+        <h1 id ="weather"></h1>
         
             <p>Temperatur: <span id="temp"></span></p>
-            <p>Air Pressure: <span id="airpress"></span></p>
+            <p>Lufttryck: <span id="airpress"></span></p>
             <p>Luft fuktighet: <span id="humid"></span></p>
             <p>Vind: <span id="wind"></span></p>
             <p>Datum and Tid: <span id="dateTime"></span></p> 
