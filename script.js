@@ -21,6 +21,9 @@ let wind = document.getElementById("wind");
 
 let dateTime = document.getElementById("dateTime");
 
+let selectedCity = document.getElementById("selectedCity"); // ref till selected city
+
+
 // funktion som hämtar vädret
 function getWeather(cityName) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`) // fetch request med värden som läggs in dynamiskt
@@ -51,7 +54,22 @@ h3Elements.forEach((h3, index) => {
 
 
 // Funktion för att uppdatera datum och tid:
-
 function updateTime() {
 dateTime.textContent = new Date().toLocaleString()
 } // uppdaterar tiden varje sekund
+// textContent av datetime sätts till aktuell tid och datum, och returneras av new date som ger den aktuell tiden. toLocalString konverterar datum och tid tillen string som visas på sidan.
+
+
+// funktion för att uppdatera vädret var 30min
+function updatetheWeather() {
+  for (let i = 0; i <cities.length; i ++) {
+    let city = cities[i];
+    getWeather(city);
+  } // för varje stad, loop som itererar över varje stad i cities arrayen, och city är den nuvarande staden. getWeather funktionen anropas med aktuell city, så att getweather hämtar och uppdaterar vädret för specifika staden.
+}
+
+setInterval(updateTime, 1000);
+// updateTime funktionen körs av setintervall för att uppdatera varje sekund (1000millisekunder)
+
+updatetheWeather(); // kallar på funktionen updatetheweather
+setIntervale (updatetheWeather, 30 * 60 * 1000) // kör updatetheweather funktionen av setinterval och sätter intervallet på varje 30min

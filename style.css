@@ -6,22 +6,23 @@ body {
 header {
     background-image: url(/img/beach-1852945__480.jpg); 
     max-width: 100%;
-    height: 150px;
+    height: 30vh;
     background-size: cover;
     background-position: center;
     text-align: center;
-    
 }
 
 
 h1  {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     color: rgb(9, 9, 126);
 }
 
 h2 {
     text-align: center;
+    margin: 30px;
+    color: rgb(23, 60, 86);
 }
 
 
@@ -34,6 +35,13 @@ h2 {
 
 }
 
+#box1:hover,
+#box1:active {
+    background-color: rgba(98, 145, 165, 0.361);
+    color: rgb(246, 249, 249);
+    transform: scale(1);
+}
+
 #box1 {
     width: calc(25% - 10px); /* Adjust the width as needed */
     background-color: #DFF0D8;
@@ -42,7 +50,15 @@ h2 {
     box-sizing: border-box;
     margin: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
   
+}
+
+#box2:hover,
+#box2:active {
+    background-color: rgba(98, 145, 165, 0.361);
+    color: rgb(246, 249, 249);
+    transform: scale(1);
 }
 
 
@@ -54,6 +70,16 @@ h2 {
         box-sizing: border-box;
         margin: 15px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer; 
+        
+}
+
+
+#box3:hover,
+#box3:active {
+    background-color: rgba(98, 145, 165, 0.361);
+    color: rgb(246, 249, 249);
+    transform: scale(1);
 }
 
 #box3 {
@@ -64,6 +90,14 @@ h2 {
     box-sizing: border-box;
     margin: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
+}
+
+#box4:hover,
+#box4:active {
+    background-color: rgba(98, 145, 165, 0.361);
+    color: rgb(246, 249, 249);
+    transform: scale(1);
 }
 
 #box4 {
@@ -74,15 +108,10 @@ h2 {
     box-sizing: border-box;
     margin: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
 }
 
 
-/* li{
-display: flex;
-flex-direction: row;
-justify-content: center;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} */
 #container {
     text-align: center;
     margin-top: 100px;

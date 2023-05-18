@@ -13,7 +13,7 @@
 
     <header> <h1> Väderkollen</h1>
     </header>
-    <h2> Välj en stad</h2>
+    <h2> Välj en stad för att se aktuellt väder</h2>
     <!-- gör så att när man väljer en stad i navigeringen så kallas funktionen getWeather, och visar data för den staden -->
     <div id ="board">
         <div id ="box1"> 
@@ -24,9 +24,11 @@
     <div id ="box3">        
             <h3 onclick="getWeather('Berlin')">Berlin</h3></div>
     <div id ="box4">   
-            <h3 onclick="getWeather('Tokyo')">Tokyo</h3></div>
+            <h3  onclick="getWeather('Tokyo')">Tokyo</h3></div>
     
     </div>
+
+    <div id="selectedCity"></div>
 
 
     <div id ="container" >
