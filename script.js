@@ -41,10 +41,17 @@ function getWeather(cityName) {
 
 // Lägga till händelsehanterare:
 
-const liElements = document.querySelectorAll('h3');
+const h3Elements = document.querySelectorAll('h3');
 h3Elements.forEach((h3, index) => {
   h3.addEventListener('click', () => {
     const city = cities[index];
     getWeather(city);
   });
 });
+
+
+// Funktion för att uppdatera datum och tid:
+
+function updateTime() {
+dateTime.textContent = new Date().toLocaleString()
+} // uppdaterar tiden varje sekund
