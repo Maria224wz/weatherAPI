@@ -1,37 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+
 body {
-    max-width: 100%;
+    min-height: 100%;
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(137, 176, 162);
+    background-image: url(/img/clouds-449822_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 90%;
 }
 
 header {
-    background-image: url(/img/beach-1852945__480.jpg); 
     max-width: 100%;
-    height: 30vh;
+    height: 22vh;
     background-size: cover;
     background-position: center;
     text-align: center;
+    opacity: 90%;
 }
 
 
-h1  {
+h1 {
     text-align: center;
-    padding: 40px;
-    color: rgb(9, 9, 126);
+    padding: 20px;
+    color: white;
+    font-size: 23px;
+}
+
+.headline {
+    text-align: center;
+    padding: 20px;
+    color: rgb(246, 249, 249);
+    font-size: 40px;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 h2 {
     text-align: center;
-    margin: 30px;
+    margin: 20px;
     color: rgb(23, 60, 86);
+    font-size: 20px;
 }
 
 
 #board {
-	background-color: rgb(23, 60, 86);
+    background-color: rgb(23, 60, 86);
     display: flex;
     justify-content: space-between;
     text-align: center;
     gap: 50px;
+    height: fit-content;
 
 }
 
@@ -43,15 +63,14 @@ h2 {
 }
 
 #box1 {
-    width: calc(25% - 10px); /* Adjust the width as needed */
+    width: calc(25% - 10px);
     background-color: #DFF0D8;
     border: 1px solid #3C763D;
-    padding: 10px;
     box-sizing: border-box;
     margin: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer; 
-  
+    cursor: pointer;
+
 }
 
 #box2:hover,
@@ -62,16 +81,15 @@ h2 {
 }
 
 
-    #box2 {
-        width: calc(25% - 10px); /* Adjust the width as needed */
-        background-color: #DFF0D8;
-        border: 1px solid #3C763D;
-        padding: 10px;
-        box-sizing: border-box;
-        margin: 15px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        cursor: pointer; 
-        
+#box2 {
+    width: calc(25% - 10px);
+    background-color: #DFF0D8;
+    border: 1px solid #3C763D;
+    box-sizing: border-box;
+    margin: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
 }
 
 
@@ -83,14 +101,13 @@ h2 {
 }
 
 #box3 {
-    width: calc(25% - 10px); /* Adjust the width as needed */
+    width: calc(25% - 10px);
     background-color: #DFF0D8;
     border: 1px solid #3C763D;
-    padding: 10px;
     box-sizing: border-box;
     margin: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 #box4:hover,
@@ -101,33 +118,51 @@ h2 {
 }
 
 #box4 {
-    width: calc(25% - 10px); /* Adjust the width as needed */
+    width: calc(25% - 10px);
     background-color: #DFF0D8;
     border: 1px solid #3C763D;
-    padding: 10px;
     box-sizing: border-box;
     margin: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer; 
+    cursor: pointer;
 }
 
+#selectedcity {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
 
 #container {
     text-align: center;
-    margin-top: 100px;
-    background-color: #DFF0D8;
-    width: auto; 
+    margin-top: 20px;
+    background-color: rgb(23, 60, 86);
+    width: auto;
     border: #3C763D solid 3px;
 }
 
 #weather {
+    margin-top: 5px;
+}
+
+p {
     margin-top: 20px;
-  }
-  
-  p {
-    margin-top: 30px;
     font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size:x-large; 
+    color: white;
+    font-size: large;
     font-weight: bold;
-  }
+    text-align: center;
+}
+
+footer {
+    height: 30px;
+}
+
+.foot {
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #DFF0D8;
+    font-size: small;
+    text-align: right;
+    padding: 5px;
+}

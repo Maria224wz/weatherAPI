@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href ="style.css">
-  
+    <link rel="stylesheet" href="style.css">
+
     <title>Weather Forecast Maria Johansson </title>
 </head>
 
 <body>
 
-    <header> <h1> Väderkollen</h1>
+    <header>
+        <h1 class="headline"> Väderkollen</h1>
     </header>
     <h2> Välj en stad för att se aktuellt väder</h2>
     <!-- gör så att när man väljer en stad i navigeringen så kallas funktionen getWeather, och visar data för den staden -->
-    <div id ="board">
-        <div id ="box1"> 
-        
-            <h3 onclick="getWeather('London')">London</h3> </div>
-    <div id ="box2">        
-            <h3 onclick="getWeather('Stockholm')">Stockholm</h3></div>
-    <div id ="box3">        
-            <h3 onclick="getWeather('Berlin')">Berlin</h3></div>
-    <div id ="box4">   
-            <h3  onclick="getWeather('Tokyo')">Tokyo</h3></div>
-    
-    </div>
+    <div id="board">
+        <div id="box1">
 
-    <div id="selectedCity"></div>
-
-
-    <div id ="container" >
-        <h1 id ="weather"></h1>
-        
-            <p>Temperatur: <span id="temp"></span></p>
-            <p>Lufttryck: <span id="airpress"></span></p>
-            <p>Luft fuktighet: <span id="humid"></span></p>
-            <p>Vind: <span id="wind"></span></p>
-            <p>Datum and Tid: <span id="dateTime"></span></p> 
+            <h3 onclick="getWeather('London')">London</h3>
+        </div>
+        <div id="box2">
+            <h3 onclick="getWeather('Stockholm')">Stockholm</h3>
+        </div>
+        <div id="box3">
+            <h3 onclick="getWeather('Berlin')">Berlin</h3>
+        </div>
+        <div id="box4">
+            <h3 onclick="getWeather('Tokyo')">Tokyo</h3>
+        </div>
 
     </div>
+
+
+    <h1 id="selectedCity"></h1>
+
+
+    <div id="container">
+        <h1 id="weather"></h1>
+
+        <p>Temperatur: <span id="temp"></span></p>
+        <p>Lufttryck: <span id="airpress"></span></p>
+        <p>Luft fuktighet: <span id="humid"></span></p>
+        <p>Vind: <span id="wind"></span></p>
+        <p>Datum and Tid: <span id="dateTime"></span></p>
+
+    </div>
+
+    <footer>
+        <p class="foot"> Inlämningsuppgift 2 Maria Johansson</p>
+    </footer>
     <script src="/script.js"></script>
+
 </body>
+
 </html>
